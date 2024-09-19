@@ -1,0 +1,4 @@
+ # Will NOT push the following files to GitHub
+
+.env
+/.venv
