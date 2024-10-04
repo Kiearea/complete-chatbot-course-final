@@ -1,19 +1,14 @@
 {% include 'layout.html' %}
 
 <div class="container mt-5">
-    <h3>
-        Generate images with Koenig
-    </h3>
-
-
     <div>
         <div class="card text-center mt-3">
             <div class="card-header">
-                Image Generation:
+                <h4> Image Generation: </h4>
             </div>
             <div class="card-body">
                 <div>
-                    <img src="{{image_url}}" alt="image">
+                    <img src="{{image_url}}">
                 </div>
             </div>
         </div>
@@ -22,7 +17,7 @@
     <form class="container" id="footer" action="/image" method="POST">
         <div class="input-group mb-3">
             <input class="form-control" placeholder="Provide descriptive details to generate an image" name="user_input">
-            <button class="btn btn-outline-primary" type="submit"> Submit </button>
+            <button class="btn btn-outline-primary" type="submit"> Generate </button>
         </div>
     </form>
 
